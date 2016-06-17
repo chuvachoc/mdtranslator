@@ -1,6 +1,15 @@
 
 (function ($) {
 
+    Storage.get('settings', function (data) {
+        if(!data || typeof data != 'object' || Object.keys(data).length < 1) {
+            Storage.set({ settings : {
+                lang_from : 'en',
+                lang_to : 'uk',
+            } });
+        }
+    });
+
     /*var sendMessageToPopup = function (options, callback) {
         var callback = callback || function () {};
 

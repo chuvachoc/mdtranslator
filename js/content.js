@@ -1,6 +1,8 @@
 
 (function () {
 
+    alert('Hello from Translator!!!');
+
     /*function sendToBG(options, callback) {
         var callback = callback || function () {};
 

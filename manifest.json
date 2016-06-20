@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "MD Translator",
-  "version": "0.0.1",
+  "version": "0.1.1",
 
   "description": "Chrome extension for language translation",
 
@@ -12,7 +12,8 @@
   },
 
   "permissions": [
-    "webRequest", "webRequestBlocking",
+    "activeTab",
+    "webRequestBlocking",
     "*://target.site/",
     "http://*/*",
     "https://*/*",
@@ -20,9 +21,9 @@
     "tabs",
     "cookies"
   ],
-  
+
   "externally_connectable": {
-    "matches": ["https://translate.google.com.ua/*"]
+    "matches" : []
   },
 
   "content_scripts": [
@@ -49,5 +50,7 @@
     "icons/delete.png"
   ],
 
-  "content_security_policy": "script-src 'self' ; object-src 'self'"
+  "offline_enabled": false,
+
+  "content_security_policy": "script-src 'self'; object-src 'self'"
 }

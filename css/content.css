@@ -1,0 +1,353 @@
+
+
+
+/*         hidden animate         */
+/*
+.ext_md_t_hidden * {
+
+}
+.ext_md_t_hidden #ext_md_t_preloader {
+
+}*/
+
+
+/***********************************/
+
+
+
+
+/*         waiting animate         */
+
+/*@keyframes showWaitingBlock {
+    0% {
+    }
+    100% {
+        width: 140px;
+        height: 140px;
+        left: -70px;
+        bottom: -70px;
+        border-radius: 50%;
+    }
+}
+
+@keyframes showResult {
+    0% {}
+    100% {
+        width: 100% !important;
+        height: auto !important;
+        left: 0px !important;
+        bottom: 0px !important;
+        border-radius: 0% !important;
+    }
+}
+
+@keyframes showResultCont {
+    0% {
+        display : block !important;
+    }
+    100% {
+        opacity : 1 !important;
+        display : block !important;
+    }
+}
+
+
+.ext_md_t_result, .ext_md_t_result *, .ext_md_t_waiting, .ext_md_t_waiting * {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+.ext_md_t_waiting {
+    animation-name: showWaitingBlock;
+}
+
+.ext_md_t_result {
+    animation-name: showResult;
+}
+
+.ext_md_t_result #ext_md_t_result_container {
+    animation-name: showResultCont;
+}
+*/
+
+
+
+@keyframes showWaitingInfBlock {
+    0% {
+        width: 140px;
+        height: 140px;
+        left: -70px;
+        bottom: -70px;
+    }
+    50% {
+        width: 120px;
+        height: 120px;
+        left: -60px;
+        bottom: -60px;
+    }
+    100% {
+        width: 140px;
+        height: 140px;
+        left: -70px;
+        bottom: -70px;
+    }
+}
+
+
+.ext_md_t_waiting_infinite {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.ext_md_t_waiting_infinite {
+    animation-name: showWaitingInfBlock;
+}
+
+.ext_md_t_waiting_infinite #ext_md_t_result_container {
+    opacity: 0;
+    display: none;
+}
+
+.ext_md_t_waiting_infinite #ext_md_t_preloader {
+    opacity: 1;
+    display: block;
+}
+
+/***********************************/
+
+
+
+
+
+/*prehidden*/
+
+.ext_md_t_prehidden#ext_md_t_main_wrapper {
+    transition: width 0.4s, height 0.4s, left 0.4s, bottom 0.4s, border-radius 0.4s, opacity 0.4s;
+    display : block;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 25px 25px 25px 0px;
+    opacity: 0;
+}
+
+.ext_md_t_hidden #ext_md_t_result_container {
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.ext_md_t_hidden #ext_md_t_preloader {
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+/***********************************/
+
+/*hidden*/
+
+.ext_md_t_hidden#ext_md_t_main_wrapper {
+    transition: width 1s, height 1s, left 1s, bottom 1s, border-radius 1s, opacity 1s;
+    display : block;
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.ext_md_t_hidden #ext_md_t_result_container {
+    transition: opacity 1s;
+    opacity: 0;
+    display : block;
+}
+
+.ext_md_t_hidden #ext_md_t_preloader {
+    transition: opacity 1s;
+    opacity: 0;
+    display : block;
+}
+
+/***********************************/
+
+/* waiting */
+
+.ext_md_t_waiting#ext_md_t_main_wrapper {
+    transition: width 0.3s cubic-bezier(0.66, 0.01, 0.45, 1.57), height 0.3s cubic-bezier(0.66, 0.01, 0.45, 1.57), left 0.3s cubic-bezier(0.66, 0.01, 0.45, 1.57), bottom 0.3s cubic-bezier(0.66, 0.01, 0.45, 1.57), border-radius 0.3s;
+    display : block;
+    width: 140px;
+    height: 140px;
+    left: -70px;
+    bottom: -70px;
+    border-radius: 50%;
+}
+
+.ext_md_t_waiting #ext_md_t_result_container {
+    transition: opacity 0.3s;
+    opacity: 0;
+    display: none;
+}
+
+.ext_md_t_waiting #ext_md_t_preloader {
+    transition: opacity 0.3s;
+    opacity: 1;
+    display: block;
+}
+
+/***********************************/
+
+/* pre result */
+
+.ext_md_t_preresult#ext_md_t_main_wrapper {
+    transition-timing-function : ease;
+    transition: width 0.3s, height 0.3s, left 0.3s, bottom 0.3s, border-radius 0.3s;
+    display : block;
+    left: 0px;
+    bottom: 0px;
+}
+
+.ext_md_t_preresult #ext_md_t_result_container {
+    transition: opacity 0.3s;
+    opacity: 0;
+    display: none;
+}
+
+.ext_md_t_preresult #ext_md_t_preloader {
+    transition: opacity 0.3s;
+    opacity: 0;
+    display: block;
+}
+
+/***********************************/
+
+/* result */
+
+.ext_md_t_show_result#ext_md_t_main_wrapper {
+    transition-timing-function : ease-in;
+    transition: width 0.3s, height 0.3s, left 0.3s, bottom 0.3s, border-radius 0.3s;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 0px;
+    display: block;
+}
+
+.ext_md_t_show_result #ext_md_t_result_container {
+    transition: opacity 0.3s;
+    opacity: 1;
+    display: block;
+}
+
+.ext_md_t_show_result #ext_md_t_preloader {
+    transition: opacity 0.3s;
+    opacity: 0;
+    display: none;
+}
+
+/***********************************/
+
+
+
+/*before load*/
+
+/*div#ext_md_t_main_wrapper {
+    width: 140px;
+    height: 140px;
+    left: -70px;
+    bottom: -70px;
+    border-radius: 50%;
+}
+
+div#ext_md_t_result_container {
+    opacity: 0;
+    display: none;
+}
+
+#ext_md_t_main_wrapper div#ext_md_t_preloader {
+    display: block;
+}*/
+
+
+
+
+/*after load*/
+
+/*div#ext_md_t_main_wrapper {
+    width: 100%;
+    height: auto;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+}
+
+div#ext_md_t_result_container {
+    opacity: 1;
+    display: block;
+}
+
+#ext_md_t_main_wrapper div#ext_md_t_preloader {
+    display: none;
+}*/
+
+
+
+
+
+
+
+
+div#ext_md_t_main_wrapper {
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999999;
+    background-color: rgb(59, 120, 231);
+    overflow: hidden;
+}
+
+#ext_md_t_main_wrapper div#ext_md_t_preloader {
+    width: 38%;
+    height: 38%;
+    position: relative;
+    margin-left: 50%;
+    margin-top: 12%;
+    /*background-color: #fff;*/
+}
+
+div#ext_md_t_result_container .ext_md_t_float {
+    float: left;
+}
+
+.ext_md_t_clear {
+    clear: both;
+}
+
+div#ext_md_t_result_container {
+    width: calc(100% - 40px);
+    max-height: 200px;
+    overflow: auto;
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-family: inherit;
+    border: 20px solid #3b78e7;
+}
+
+div#ext_md_t_result_container .ext_md_t_text {
+    max-width: 48%;
+    min-width: 100px;
+}
+
+div#ext_md_t_result_container .ext_md_t_mid {
+    max-width: 2%;
+    margin: 0px 1%;
+    min-width: 6px;
+}
+
+div#ext_md_t_wrapper {overflow: scroll;max-height: 180px;line-height: 1.3em;font-weight: 100;}

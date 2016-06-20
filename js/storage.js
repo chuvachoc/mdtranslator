@@ -1,4 +1,4 @@
-var Storage = {
+var Storage = { //AIzaSyAAfz5Pv7UOMSOpdDm-TRUNelxjjNSOegs
     get : function (keys, callback) {
         chrome.storage.local.get(keys, callback);
     },

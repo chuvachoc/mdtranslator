@@ -1,0 +1,22 @@
+{
+  "name": "mdtranslator",
+  "version": "1.0.0",
+  "description": "Crome extension for language translation",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuvachoc/mdtranslator.git"
+  },
+  "keywords": [
+    "mdtranslator"
+  ],
+  "author": "Denys Mykhajlyshen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chuvachoc/mdtranslator/issues"
+  },
+  "homepage": "https://github.com/chuvachoc/mdtranslator#readme"
+}

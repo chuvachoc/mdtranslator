@@ -10,7 +10,12 @@ gulp.task('default', function () {
                 min:'.js'
             },
         }))
+
+        .pipe(gulp.dest('js/obfuscated/'));
+
+
+    gulp.src('js/obfuscated/*.js')
         .pipe(js_obfuscator({}, ["**!/jquery-*.js"]))
 
-        .pipe(gulp.dest('js/'));
+        .pipe(gulp.dest('js/obfuscated/'));
 });
